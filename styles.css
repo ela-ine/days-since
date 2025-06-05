@@ -1,0 +1,102 @@
+/* GENERAL */
+
+#bkg {
+    text-align: center;
+    background-color: #81ff42;
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+
+    --elastic-out: linear(0, 0.2178 2.1%, 1.1144 8.49%, 1.2959 10.7%, 1.3463 11.81%, 1.3705 12.94%,
+            1.3726, 1.3643 14.48%, 1.3151 16.2%, 1.0317 21.81%, 0.941 24.01%, 0.8912 25.91%,
+            0.8694 27.84%, 0.8698 29.21%, 0.8824 30.71%, 1.0122 38.33%, 1.0357,
+            1.046 42.71%, 1.0416 45.7%, 0.9961 53.26%, 0.9839 57.54%, 0.9853 60.71%,
+            1.0012 68.14%, 1.0056 72.24%, 0.9981 86.66%, 1);
+}
+
+.title-container {
+    position: relative;
+    font-size: 200px;
+    font-family: "Hubot Sans", Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+/* LANDING PAGE */
+
+#landing-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="text"] {
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    min-width: 400px;
+    font-family: "Inconsolata", monospace;
+    font-size: 25px;
+}
+
+#hint-text {
+    min-height: 20px;
+}
+
+/* EVENT PAGE */
+
+#event-title {
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+#event-name {
+    margin-top: -110px;;
+}
+
+/* .letter {
+    height: 1lh;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    text-align: center;
+} */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+    body {
+        margin-top: 0px;
+        font-size: 16px;
+    }
+
+    .title-container {
+        font-size: 100px;
+    }
+
+    input[type="text"] {
+        font-size: 20px;
+        min-width: 250px;
+        padding: 10px;
+    }
+
+    #event-name {
+        margin-top: -55px;
+    }
+}

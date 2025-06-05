@@ -1,0 +1,16 @@
+{
+  "name": "days-since",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "gsap": "^3.13.0",
+    "sqlite3": "^5.1.7"
+  }
+}

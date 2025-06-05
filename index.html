@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@1,900&family=Inconsolata:wght@200..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrambleTextPlugin.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="colors.css">
+    <script src="script.js"></script>
+    <title>days since...</title>
+</head>
+
+<body id="bkg">
+    <div id="landing-page">
+        <div id="default-title" class="title-container">
+            <div>days since...</div>
+        </div>
+        <form id="event-name-form" onsubmit="return false;">
+            <input type="text" id="event-name-input" placeholder="event" />
+            <input type="submit" hidden />
+        </form>
+        <div id="hint-text">
+            <span id="submit-text" hidden>HIT ENTER</span>
+            <span id="help-text" hidden>event name is required sorry :/</span>
+        </div>
+    </div>
+    <div id="event-page" hidden>
+        <div id="event-title" class="title-container"></div>
+        <div id="timer">
+            <p id="time">0 days, 0 hours, 0 minutes, 0 seconds</p>
+            <button id="reset-button">reset</button>
+        </div>
+    </div>
+</body>
+
+</html>
