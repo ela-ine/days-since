@@ -1,6 +1,8 @@
 /* from https://codepen.io/GreenSock/pen/xxmzBrw/fcaef74061bb7a76e5263dfc076c363e.css */
 
 :root {
+  --background-color: var(--color-lt-green);
+  --text-color: var(--color-just-black);
   --color-shockingly-green: #0ae448;
   --color-just-black: #0e100f;
   --color-surface-white: #fffce1;

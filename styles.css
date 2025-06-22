@@ -99,4 +99,8 @@ input[type="text"] {
     #event-name {
         margin-top: -55px;
     }
+
+    #event-title {
+        white-space: normal;
+    }
 }
