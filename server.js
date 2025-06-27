@@ -9,7 +9,7 @@ const db = new sqlite3.Database('./events.db');
 
 // Middleware
 app.use(cors({
-    origin: ['http://127.0.0.1:3000', 'https://ela-ine.github.io'],
+    origin: ['http://127.0.0.1:3000', 'https://days-since-pb2j.onrender.com'],
     methods: ['GET', 'POST'], 
     allowedHeaders: ['Content-Type'],
 }));
