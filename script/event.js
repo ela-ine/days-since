@@ -1,6 +1,6 @@
 import { nanoid } from 'https://cdn.jsdelivr.net/npm/nanoid/nanoid.js';
 const EVENT_ID_KEY = 'event';
-const API_URL = 'https://days-since-pb2j.onrender.com/';
+const API_URL = 'https://days-since-pb2j.onrender.com';
 var eventDetails = null;
 
 // **** TIMER METHODS **** //
