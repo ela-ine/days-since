@@ -2,6 +2,7 @@ const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 const db = new sqlite3.Database('./events.db');
@@ -14,6 +15,9 @@ app.use(cors({
 }));
 
 app.use(bodyParser.json());
+
+// Serve frontend static files
+app.use(express.static(path.join(__dirname)));
 
 // Initialize database
 db.serialize(() => {
@@ -29,6 +33,10 @@ db.serialize(() => {
 
 app.get('/ping', (req, res) => {
     res.json({ message: 'pong' });
+});
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Get event details by id
